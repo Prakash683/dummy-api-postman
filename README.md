@@ -1,64 +1,67 @@
-# Dummy API for Postman Tutorials
+# 🧠 React Quiz App
 
-This is a simple REST API built with Express.js that you can use to practice Postman. It includes endpoints for managing users and posts.
+A responsive and interactive Quiz App built with React. This project helps users test their knowledge with multiple-choice questions, featuring real-time feedback and progress tracking.
 
-## Setup
+## 📋 Features
 
-1. Install dependencies:
+- ✅ Start page to begin the quiz
+- 🔀 Randomized options per question
+- 🕒 Countdown timer (15 seconds/question)
+- ✔️ Highlights correct/wrong answers
+- 📊 Score tracking and progress bar
+- 🔄 Restart quiz anytime
+- 📱 Mobile responsive design
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/react-quiz-app.git
+cd react-quiz-app
+```
+2. Install Dependencies
 ```bash
 npm install
 ```
-
-2. Start the server:
+3. Start the Development Server
 ```bash
-npm start
+npm run dev
 ```
+The app will be available at http://localhost:5173 (default Vite port).
 
-The server will run on `http://localhost:3000`
-
-## Available Endpoints
-
-### Users
-
-- `GET /api/users` - Get all users
-- `GET /api/users/:id` - Get a specific user
-- `POST /api/users` - Create a new user
-- `PUT /api/users/:id` - Update a user
-- `DELETE /api/users/:id` - Delete a user
-
-### Posts
-
-- `GET /api/posts` - Get all posts
-- `GET /api/posts/:id` - Get a specific post
-- `POST /api/posts` - Create a new post
-
-## Example Requests
-
-### Create a new user
-```http
-POST /api/users
-Content-Type: application/json
-
-{
-    "name": "Alice Johnson",
-    "email": "alice@example.com"
-}
+###📁 Folder Structure
+```bash
+src/
+├── components/
+│   ├── Quiz.jsx
+│   └── Questions.jsx
+├── App.jsx
+├── main.jsx
+├── index.css
 ```
+</details>
+<details> <summary>🛠️ <strong>Tech Stack</strong></summary>
+React (Functional Components + Hooks)
 
-### Create a new post
-```http
-POST /api/posts
-Content-Type: application/json
+Vite (Blazing fast dev environment)
 
-{
-    "title": "My First Post",
-    "content": "This is the content of my first post",
-    "userId": 1
-}
-```
+JavaScript (ES6+)
 
-## Notes
+CSS3
 
-- This is a dummy API with in-memory storage. Data will be reset when the server restarts.
-- All endpoints return JSON responses.
-- The API includes basic error handling for common scenarios. 
+</details>
+<details> <summary>📌 <strong>Future Ideas</strong></summary>
+Add question categories (e.g., Science, History)
+
+Introduce difficulty levels (Easy, Medium, Hard)
+
+Save score history using localStorage
+
+Add a leaderboard or multiplayer mode
+
+Include sound effects or animations
+
+</details>
